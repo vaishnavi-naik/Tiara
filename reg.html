@@ -1,0 +1,220 @@
+<html>
+<center>
+  <head>
+   <title>Tiara</title>
+   <link rel = "stylesheet" href = "css/bootstrap.min.css"/>
+   <link rel = "stylesheet" href = "css/mycss.css"/>
+   <style type="text/css">
+    .wrapper { 
+  height:1000px;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+  </style>
+ </head>
+ <body>
+  <div class="wrapper"><nav class="navbar navbar-default" style=" padding-top:30px;padding-bottom:30px;margin-bottom:1px;">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+         <img src="http://tiara.sjec.ac.in/img/tiaralogo.png" style="margin-top:-50px;" alt="TIARA" height="120px" width="120px">
+       </a>
+     </div>
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="details.html">EVENTS <span class="sr-only">(current)</span></a></li>
+        <li><a href="sched.html">SCHEDULE</a></li>
+        <li class="active"><a href="reg.html">REGISTRATION</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="col-sm-offset-3 col-sm-6 registration">
+  <center><H1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REGISTRATION FORM</H1><br></center>
+  <form class="form-horizontal" action = "#" method= "GET">
+    <div class="form-group">
+      <label for="fname" class="col-sm-4 control-label">First Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="fname" placeholder="Enter your first name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="mname" class="col-sm-4 control-label">Middle Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="mname" placeholder="Enter your middle name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="lname" class="col-sm-4 control-label">Last Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="lname" placeholder="Enter your last name">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="coll" class="col-sm-4 control-label">College</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="coll" placeholder="Enter your College name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="col-sm-4 control-label">Email</label>
+      <div class="col-sm-7">
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="col-sm-4 control-label">Mobile Number</label>
+      <div class="col-sm-7">
+        <input type="tel" class="form-control" id="phone" placeholder="Mobile Number">
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="male" class="col-sm-4 control-label">Gender</label>
+        <div class="col-sm-4 radio">
+          <input type="radio" value="Male" name="male">Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" value="Female" name="male"/>Female
+        </div>
+      </br></br>
+    </div>
+
+  <div class="form-group">
+    <label for="date" class="col-sm-4 control-label">Date Of Birth</label>
+    <div class="col-sm-7">
+      <input type="date"  class="form-control" id="date"name="date"/>
+    </div>
+  </div>
+
+
+<div class="form-group">
+    <label for="course" class="col-sm-4 control-label">Course</label>
+    <div class="col-sm-7">
+      <select name="course" class="form-control">
+         <option>B.E / B.Tech</option>
+         <option>MCA</option>
+         <option>MBA</option>
+       </select>
+    </div>
+  </div>
+
+<div class="form-group">
+    <label for="dept" class="col-sm-4 control-label">Department</label>
+    <div class="col-sm-7">
+      <select name="dept" class="form-control">
+        <option value="CSE"> Computer Science and Engineering</option>
+        <option value="CIV"> Civil Engineering</option>
+        <option value="CE"> Chemical Engineering</option>
+        <option value="EEE"> Electronics and Electrical Engineering </option>
+        <option value="ECE"> Electronics and Communication </option>
+        <option value="ISE"> Information Science and Engineering</option>
+        <option value="ME"> Mechanical Engineering</option>
+        <option value="NA"> Not applicable</option>
+      </select>
+    </div>
+  </div>
+
+<div class="form-group">
+    <label for="year" class="col-sm-4 control-label">Year</label>
+    <div class="col-sm-7">
+      <select name="year" class="form-control">
+       <option value="1"> 1</option>
+       <option value="2"> 2</option>
+       <option value="3"> 3</option>
+       <option value="4"> 4</option>
+      </select>
+    </div>
+  </div>
+
+<div class="form-group">
+  <label for="event" class="col-sm-4 control-label">Event</label>
+  <div class="col-sm-7">
+    <select name="event" class="form-control">
+     <optgroup label="CSE">
+     <option  value="codebuzz"> CodeBuzz</option>
+     <option value="techroadies"> TechRoadies</option>
+     <option value="robowars"> Robo-wars</option>
+     <option value="technovanza"> Technovanza</option>
+     <option value="rushhour"> Rush Hour</option>
+     <option value="mindspark"> Mindspark</option>
+     <option value="coderunner"> CodeRunner</option>
+     <option value="digihunt"> DigiHunt</option>
+     </optgroup>
+     <optgroup label="ECE">
+     <option value="ece1">ECE Event 1</option>
+     <option value="ece2">ECE Event 2</option>
+     <option value="ece3">ECE Event 3</option>
+     <option value="ece4">ECE Event 4</option>
+     </optgroup>
+     <optgroup label="EEE">
+     <option value="eee1">EEE Event 1</option>
+     <option value="eee2">EEE Event 2</option>
+     <option value="eee3">EEE Event 3</option>
+     <option value="eee4">EEE Event 4</option>
+     </optgroup>
+    </select>
+  </div>
+</div>
+
+<center><input class="btn btn-lg btn-primary" type ="button" value="Register"/></center>
+
+</form>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
